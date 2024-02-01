@@ -1,0 +1,33 @@
+.header {
+    display: flex;
+    justify-content: center;
+
+    img {
+        height: 200px;
+        margin-bottom: 60px;
+        margin-top: -40px;
+        width: 25%;
+    }
+}
+
+.container {
+    margin: 50px;
+
+    .nav {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        
+        .list-header {
+            align-items: center;
+            display: flex;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+    }
+}

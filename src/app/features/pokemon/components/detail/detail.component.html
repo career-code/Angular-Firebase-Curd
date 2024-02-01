@@ -1,0 +1,18 @@
+<div class="detail">
+    <h2>{{ pokemon.name }}</h2>
+    <h4>{{ pokemon.father_name }}</h4>
+    <div class="content">
+      <img [src]="pokemon.imgUrl" />
+      <div>
+        <p>Age: {{ pokemon.age }}</p>
+        <p>Phone: {{ pokemon.phone }}</p>
+        <p>Description:
+          {{ pokemon.description }}
+        </p>
+      </div>
+    </div>
+    <div>
+      <button (click)="update()" mat-raised-button color="primary">Edit</button>
+      <button (click)="delete()" mat-raised-button color="warn">Delete</button>
+    </div>
+  </div>

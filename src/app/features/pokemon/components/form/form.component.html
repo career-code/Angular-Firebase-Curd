@@ -1,0 +1,77 @@
+<form [formGroup]="form">
+  <mat-form-field>
+    <mat-label>Full Name</mat-label>
+    <input
+      required
+      formControlName="name"
+      class="form-control"
+      placeholder="Aliyan Ahmad"
+      type="text"
+      matInput
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Father Name</mat-label>
+    <input
+      required
+      formControlName="father_name"
+      class="form-control"
+      placeholder="Razzaq Ali"
+      type="text"
+      matInput
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Age</mat-label>
+    <input
+      matInput
+      required
+      formControlName="age"
+      class="form-control"
+      placeholder="23"
+      type="number"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Phone no</mat-label>
+    <input
+      matInput
+      required
+      formControlName="phone"
+      class="form-control"
+      placeholder="03071724386"
+      type="number"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Description</mat-label>
+    <input
+      matInput
+      required
+      formControlName="description"
+      class="form-control"
+      placeholder="Aliyan Ahmad: Talented frontend developer with a flair for creative design and expertise in modern web technologies. Known for crafting user-friendly interfaces and staying updated with industry trends."
+      type="text"
+    />
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Profile Image</mat-label>
+    <input
+      matInput
+      required
+      formControlName="imgUrl"
+      class="form-control"
+      placeholder="https://Your_Photo.png"
+      type="text"
+    />
+  </mat-form-field>
+  <button
+    type="button"
+    mat-raised-button
+    (click)="submit()"
+    color="primary"
+    [disabled]="!form.valid"
+  >
+    Submit
+  </button>
+</form>
